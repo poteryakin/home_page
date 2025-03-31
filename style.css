@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#backConvert {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+#transformBackground {
+    background-color: rgb(27, 141, 170);
+    height: 110vh;
+    width: 125%;
+    position: relative;
+    transform: rotate(-15deg) scale(1.2) translateY(-600px);
+}
+
+#about_me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+    padding-top: 5%;
+}
+
+#photo_me {
+    background-image: url(./me.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    width: 40%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.3));
+}
+
+#photo_me p {
+    color: white;
+    font-family: "Playfair Display";
+    font-style: italic;
+    font-size: clamp(5em, 5vw, 15em);
+    text-align: center;
+    margin: 0;
+}
+
+#me_text {
+    background-color: white;
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.3));
+    width: 45%;
+    height: 60vh;
+    padding-left: 50px;
+    font-family: "PlayfairDisplay";
+    font-style: italic;
+}
+
+#me_text h3 {
+    font-size: 3em;
+}
+
+#me_text p {
+    font-size: clamp(2em, 1.8vw, 3em);
+}
+
+#click_href {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    bottom: 2em;
+    right: 7em;
+    fill: black;
+    gap: 50px;
+}
+
+svg {
+    width: 50px;
+}
+
+#my_work {
+    margin-left: 10em;
+    margin-right: 10em;
+    padding-top: 8em;
+}
+
+#my_work h1 {
+    font-size: 3em;
+}
+
+#projects {
+    display: flex;
+    flex-direction: row;
+}
+
+.task {
+    width: 25%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.task img {
+    width: 100%;
+}
+
+.task_name {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.href {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+@media (max-width: 1500px) and (min-width: 700px) {
+
+    #about_me {
+        display: block; 
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px;
+        overflow: hidden;
+    }
+
+    #photo_me {
+        float: left; 
+        width: 450px; 
+        height: 500px; 
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    #photo_me p {
+        position: absolute;
+        font-size: clamp(3em, 5vw, 5em);
+        top: 0px;
+        width: 90vw;
+        text-align: end;
+    }
+
+    #me_text {
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        height: auto;
+        width: auto;
+        margin-top: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #click_href {
+        position: static; 
+        justify-content: center; 
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    #transformBackground {
+        transform: rotate(65deg) translateX(-330px);
+    }
+    #photo_me p {
+        font-size: clamp(3em, 5vw, 5em);
+        text-align: left;
+        margin-left: 10px;
+    }
+    #about_me {
+        flex-direction: column;
+        padding-top: 7%;
+    }
+    #photo_me {
+        height: 60vh;
+        width: 75%;
+    }
+    #me_text {
+        width: fit-content;
+        height: fit-content;
+        filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0));
+        text-align: center;
+        padding-left: 0;
+
+    }
+    #me_text h3 {
+        font-size: 3em;
+    }
+    #me_text p {
+        font-size: 2em;
+    }
+    svg {
+        width: 50px;
+    }
+    #click_href {
+        justify-content: center;
+        gap: 30px;
+        position: static;
+    }
+}
+
+
