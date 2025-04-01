@@ -147,6 +147,66 @@ svg {
     opacity: 0.6;
 }
 
+#contacts {
+    background-color: rgb(27, 141, 170);
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    gap: 50px;
+    padding-bottom: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#contact_text h1 {
+    color: white;
+    font-size: 50px;
+    margin: 0;
+}
+
+#contact_text p {
+    color: white;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+#contacts img {
+    height: 450px;
+    width: 25%;
+}
+
+#phone {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 30px;
+    padding-top: 15px;
+}
+
+#phone svg {
+    fill: white;
+}
+
+#mail {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+#mail svg {
+    fill: white;
+}
+
+#href_contacts {
+    display: flex;
+    gap: 30px;
+}
+
 
 @media (max-width: 1500px) and (min-width: 700px) {
     #backConvert {
@@ -209,6 +269,10 @@ svg {
     #transformBackground {
         transform: rotate(-15deg) scale(2) translateY(-1100px);
     }
+    
+    #contacts img {
+        width: 35%;
+    }
 
 }
 
@@ -264,6 +328,31 @@ svg {
     }
     #projects {
         gap: 50px;
+    }
+    #contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+    #contacts img {
+        width: 100%;
+    }
+    #contact_text {
+        font-size: 20px;
+    }
+    #mail {
+        font-size: 25px;
+    }
+    #phone {
+        font-size: 25px;
+    }
+    #href_contacts {
+        justify-content: center;
     }
 }
 
