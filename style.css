@@ -56,10 +56,13 @@ body {
     background-color: white;
     filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.3));
     width: 45%;
-    height: 60vh;
     padding-left: 50px;
     font-family: "PlayfairDisplay";
     font-style: italic;
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+    padding-bottom: 30px;
 }
 
 #me_text h3 {
@@ -71,7 +74,6 @@ body {
 }
 
 #click_href {
-    position: absolute;
     display: flex;
     width: 100%;
     justify-content: flex-end;
@@ -248,6 +250,7 @@ svg {
         margin-top: 80px;
         margin-left: 20px;
         margin-right: 20px;
+        display: block;
     }
 
     #click_href {
