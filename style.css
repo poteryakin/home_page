@@ -361,9 +361,3 @@ svg {
         transform: rotate(-15deg) scale(1.2) translateY(-400px);
     }
 }
-
-@media (max-width: 950px) and (min-width: 800px) {
-    #transformBackground {
-        transform: rotate(-15deg) scale(1.2) translateY(-200px);
-    }
-}
